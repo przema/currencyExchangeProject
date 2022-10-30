@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <title>Kantor</title>
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <div class="container">
+        <header class="header">
+            <h1 class="headerText">DUSIGROSZ</h1>
+            <h3>TWÓJ KANTOR</h3>
+        </header>
+        <main>
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="tableCaption">Aktualne kursy wymiany walut</caption>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader" scope="col">Waluta</th>
+                        <th class="tableCell tableHeader" scope="col">Sprzedaż</th>
+                        <th class="tableCell tableHeader" scope="col">Kupno</th>
+
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader">USD</th>
+                        <td class="tableCell">4,84</td>
+                        <td class="tableCell">4,75</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader">EUR</th>
+                        <td class="tableCell">4,78</td>
+                        <td class="tableCell">4,63</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader">CHF</th>
+                        <td class="tableCell">4,84</td>
+                        <td class="tableCell">4,77</td>
+                    </tr>
+                    <tr class="tableRow">
+                        <th class="tableCell tableHeader">GBP</th>
+                        <td class="tableCell">5,47</td>
+                        <td class="tableCell">5,35</td>
+                    </tr>
+                </table>
+
+                <div class="formContainer">
+                    <form class="form js-form">
+                        <fieldset class="form__fieldset">
+                            <legend class="form__legend">Przelicznik walut</legend>
+                            <span class="form__labelText">
+                                Wybierz opcję:</span>
+
+                            <ul class="list">
+                                <li class="list__item">
+                                    <label>
+                                        <input type="radio" name="choice" value="buying" checked class="js-radio-1">
+                                        <span class="form__labelText">kupuję</span></label>
+                                </li>
+                                <li class="list__item">
+                                    <label>
+                                        <input type="radio" name="choice" value="selling" class="js-radio-2">
+                                        <span class="form__labelText">sprzedaję</span></label>
+                                </li>
+                            </ul>
+                            <label><span class="form__labelText">Wybierz walutę:</span></label>
+                            <select class="form__field js-form__field" name="currencyToBuy">
+                                <option value="1">USD dolar amerykański</option>
+                                <option value="2">EUR euro</option>
+                                <option value="3">CHF frank szwajcarski</option>
+                                <option value="4">GBP funt brytyjski</option>
+                                <!-- <option>PLN polski złoty</option> -->
+                            </select>
+                            </p>
+                            <p>
+                                <label>
+                                    <span class="form__labelText">Podaj kwotę:</span>
+                                    <input required class="form__field--sum js-input" name="sum" type="number" min="1"
+                                        step="any" value="1">
+                                </label>
+                            </p>
+
+                        </fieldset>
+                        <p>
+                            <button class="form__button js.form__button">Przelicz</button>
+                        </p>
+                    </form>
+                    <p class="calculation">
+                        Całkowita wartość: <strong class="js-calculation">N/A</strong> <strong><span class="js-currencyName"></span></strong>
+                    </p>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+    </main> 
+</body>
+
+</html>
