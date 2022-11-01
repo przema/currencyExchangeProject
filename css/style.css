@@ -7,8 +7,11 @@ html {
 }
 
 .body {
+    color: white;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
+    background-image: url("../images/wp2128270.jpg");
+    background-size: cover;
 }
 
 
@@ -37,17 +40,18 @@ html {
 }
 
 .tableRow:hover {
-    background-color: hsla(234, 51%, 85%, 0.957);
+    background-color: #47bedc;
 }
 
 .tableCell {
+    color: #004655;
     padding: 15px;
     text-align: center;
     border: 1px solid #ccc;
 }
 
 .tableHeader {
-    background-color: rgba(145, 155, 243, 0.957);
+    background-color: #03768e;
     color: white;
     font-weight: normal;
 }
@@ -59,6 +63,7 @@ html {
 }
 
 .calculation {
+    color: white;
     font-size: 22px;
     text-align: right;
     padding-right: 30px;

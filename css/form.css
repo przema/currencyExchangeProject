@@ -30,25 +30,27 @@
 .form__button {
     width: 100%;
     border: none;
-    background-color: hsla(234, 55%, 58%, 0.957);
+    background-color: #47bedc;
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
 .form__button:hover {
-    background-color: hsla(234, 51%, 42%, 0.957);
+    background-color: #004655;
 }
 
 .form__fieldset {
-    border: 1px solid #ccc;
+    color: white;
+    background-color: #03768e;
+    border: 1px solid #03768e;
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
 }
 
 .form__legend {
-    background-color: hsla(234, 55%, 58%, 0.957);
+    background-color: #004655;
     color: white;
     border-radius: 5px;
     padding: 10px;
