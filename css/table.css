@@ -19,18 +19,18 @@
 }
 
 .table__row:hover {
-    background-color: #47bedc;
+    background-color: #00abda;
 }
 
 .table__cell {
-    color: #004655;
+    color: #201e36;
     padding: 15px;
     text-align: center;
     border: 1px solid #ccc;
 }
 
 .table__header {
-    background-color: #03768e;
+    background-color: #201e36;
     color: white;
     font-weight: normal;
 }

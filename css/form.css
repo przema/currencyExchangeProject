@@ -30,27 +30,27 @@
 .form__button {
     width: 100%;
     border: none;
-    background-color: #47bedc;
+    background-color: #00abda;
     color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
 .form__button:hover {
-    background-color: #004655;
+    background-color: hsl(193, 100%, 33%);
 }
 
 .form__fieldset {
     color: white;
-    background-color: #03768e;
-    border: 1px solid #03768e;
+    background-color: #201e36;
+    border: 1px solid #201e36;
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
 }
 
 .form__legend {
-    background-color: #004655;
+    background-color: #00abda;
     color: white;
     border-radius: 5px;
     padding: 10px;
