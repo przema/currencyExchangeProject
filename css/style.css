@@ -14,46 +14,8 @@ html {
     background-size: cover;
 }
 
-
-.tableContainer {
+.main__tableContainer {
     overflow-x: auto;
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.tableCaption {
-    caption-side: bottom;
-    text-align: right;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.tableRow {
-    background-color: white;
-}
-
-.tableRow:nth-child(even) {
-    background-color: #eee;
-}
-
-.tableRow:hover {
-    background-color: #47bedc;
-}
-
-.tableCell {
-    color: #004655;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-.tableHeader {
-    background-color: #03768e;
-    color: white;
-    font-weight: normal;
 }
 
 .container {
@@ -67,12 +29,4 @@ html {
     font-size: 22px;
     text-align: right;
     padding-right: 30px;
-}
-
-.list {
-    list-style-type: none;
-}
-
-.list__item {
-    padding: 5px;
 }

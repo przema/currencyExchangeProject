@@ -1,49 +1,64 @@
-let radioElement1 = document.querySelector(".js-radio-1");
-let radioElement2 = document.querySelector(".js-radio-2");
-let inputElement = document.querySelector(".js-input");
-let formElement = document.querySelector(".js-form");
-let calculationElement = document.querySelector(".js-calculation");
-let currencyName = document.querySelector(".js-currencyName");
-let selectElement = document.querySelector(".js-form__field");
+{
+    const welcome = () => {
+        console.log("Witam wszystkich developerów");
+    };
+    
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
+        const selectElement = document.querySelector(".js-form__field");
+        const index = selectElement.value;
+        const radioElement1 = document.querySelector(".js-radio-1");
+        const inputElement = document.querySelector(".js-input");
+        const calculationElement = document.querySelector(".js-calculation");
+        const summary = inputElement.value;
+        const currencyName = document.querySelector(".js-currencyName");
+        currencyName.innerText = index;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+        switch (radioElement1.checked) {
+            case true:
+                switch (index) {
+                    case "USD":
+                        return calculationElement.innerText = (summary * 4.84).toFixed(2);
+                          
+                    case "EUR":
+                        return calculationElement.innerText = (summary * 4.78).toFixed(2);
 
+                    case "CHF":
+                        return calculationElement.innerText = (summary * 4.84).toFixed(2);
 
-    let index = selectElement.value;
-    let summary = inputElement.value;
+                    case "GBP":
+                        return calculationElement.innerText = (summary * 5.47).toFixed(2);
+                }
+                break;
 
-    if (radioElement1.checked) {
-        if (index == 1) {
-            calculationElement.innerText = (summary * 4.84).toFixed(2);
-            currencyName.innerText = "USD";
-        } else if (index == 2) {
-            calculationElement.innerText = (summary * 4.78).toFixed(2);
-            currencyName.innerText = "EUR";
-        } else if (index == 3) {
-            calculationElement.innerText = (summary * 4.84).toFixed(2);
-            currencyName.innerText = "CHF";
-        } else {
-            calculationElement.innerText = (summary * 5.47).toFixed(2);
-            currencyName.innerText = "GBP";
-        }
-    } else {
-        if (index == 1) {
-            calculationElement.innerText = (summary * 4.75).toFixed(2);
-            currencyName.innerText = "PLN";
-        } else if (index == 2) {
-            calculationElement.innerText = (summary * 4.63).toFixed(2);
-            currencyName.innerText = "PLN";
-        } else if (index == 3) {
-            calculationElement.innerText = (summary * 4.77).toFixed(2);
-            currencyName.innerText = "PLN";
-        } else {
-            calculationElement.innerText = (summary * 5.35).toFixed(2);
-            currencyName.innerText = "PLN";
-        }
-    }
-})
+            case false:
+                switch (index) {
+                    case "USD":
+                        return calculationElement.innerText = (summary * 4.75).toFixed(2);
 
+                    case "EUR":
+                        return calculationElement.innerText = (summary * 4.63).toFixed(2);
+
+                    case "CHF":
+                        return calculationElement.innerText = (summary * 4.77).toFixed(2);
+
+                    case "GBP":
+                        return calculationElement.innerText = (summary * 5.35).toFixed(2);
+                };
+                break;
+        };
+        
+    };
+    
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", onFormSubmit);
+
+        welcome();
+    };
+    
+    init();
+}
 
 
