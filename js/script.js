@@ -13,10 +13,11 @@
         const calculationElement = document.querySelector(".js-calculation");
         const summary = inputElement.value;
         const currencyName = document.querySelector(".js-currencyName");
-        currencyName.innerText = index;
+       
 
         switch (radioElement1.checked) {
             case true:
+                currencyName.innerText = index;
                 switch (index) {
                     case "USD":
                         return calculationElement.innerText = (summary * 4.84).toFixed(2);
@@ -33,6 +34,7 @@
                 break;
 
             case false:
+                currencyName.innerText = "PLN";
                 switch (index) {
                     case "USD":
                         return calculationElement.innerText = (summary * 4.75).toFixed(2);
