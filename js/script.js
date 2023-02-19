@@ -2,7 +2,7 @@
     const welcome = () => {
         console.log("Witam wszystkich developerów");
     };
-    
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
@@ -13,7 +13,7 @@
         const calculationElement = document.querySelector(".js-calculation");
         const summary = inputElement.value;
         const currencyName = document.querySelector(".js-currencyName");
-       
+
 
         switch (radioElement1.checked) {
             case true:
@@ -21,7 +21,7 @@
                 switch (index) {
                     case "USD":
                         return calculationElement.innerText = (summary * 4.84).toFixed(2);
-                          
+
                     case "EUR":
                         return calculationElement.innerText = (summary * 4.78).toFixed(2);
 
@@ -50,16 +50,16 @@
                 };
                 break;
         };
-        
+
     };
-    
+
     const init = () => {
         const formElement = document.querySelector(".js-form");
         formElement.addEventListener("submit", onFormSubmit);
 
         welcome();
     };
-    
+
     init();
 }
 
