@@ -10,8 +10,10 @@ html {
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     margin: 0;
-    background-image: url("../images/4445555.jpg");
+    background-image: url("../images/background2.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .main__tableContainer {
@@ -26,7 +28,7 @@ html {
 
 .calculation {
     color: white;
-    background-color: #201e36;
+    background-color: hwb(245 12% 79%);
     font-size: 22px;
     text-align: right;
     padding: 20px;
